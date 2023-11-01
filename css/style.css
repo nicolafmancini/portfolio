@@ -1,0 +1,244 @@
+/* Enables smooth scrolling when clicking on links that lead to different sections of the page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Sets the font family, removes default margin and padding, sets box-sizing to border-box for easier sizing, and sets the background color */
+body {
+  font-family: Arial, sans-serif; /* Sets the font family of the body text to Arial, if Arial is not available, it falls back to any sans-serif font */
+  margin: 0; /* Removes the default margin around the body */
+  padding: 0; /* Removes the default padding around the body */
+  box-sizing: border-box; /* Includes the padding and border in the element's total width and height */
+  background-color: #f8f9fa; /* Sets the background color of the body */
+}
+
+/* Sets the background color, makes the header sticky, sets the position of the sticky header, sets the z-index to ensure the header is on top, adds padding to the header, and adds a shadow to the header */
+header {
+  background-color: #fff; /* Sets the background color of the header to white */
+  position: sticky; /* Makes the header stick to the top of the page when scrolling */
+  top: 0; /* Sets the top edge of the header to be at the top edge of the viewport */
+  z-index: 100; /* Sets the stack order of the header to 100, which should be higher than the other elements on the page */
+  padding: 10px 0; /* Adds 10px of padding to the top and bottom of the header, and 0px of padding to the left and right */
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1); /* Adds a shadow to the header */
+}
+
+/* Removes the default list style, removes the default padding, displays the list items in a row, distributes the list items evenly, and adds margin to the list */
+nav ul {
+  list-style-type: none; /* Removes the default bullet points from the list */
+  padding: 0; /* Removes the default padding around the list */
+  display: flex; /* Displays the list items in a row */
+  justify-content: space-around; /* Distributes the list items evenly along the horizontal line */
+  margin: 0 50px; /* Adds 0px of margin to the top and bottom of the list, and 50px of margin to the left and right */
+}
+
+/* Removes the default text decoration, sets the color of the text, and adds a transition effect to the color and transform properties */
+nav ul li a {
+  text-decoration: none; /* Removes the default underline from the links */
+  color: #333; /* Sets the color of the link text to a dark gray */
+  transition: color 0.3s ease, transform 0.3s ease; /* Adds a transition effect to the color and transform properties, the effect lasts 0.3 seconds and has an easing function for a smooth transition */
+}
+
+/* Changes the color of the text when hovered over and scales the size of the text when hovered over */
+nav ul li a:hover {
+  color: #007BFF; /* Changes the color of the link text to a bright blue when hovered over */
+  transform: scale(1.1); /* Scales the size of the link text to 110% of its original size when hovered over */
+}
+
+/* Sets the color of the "Resume" button in the navigation bar */
+nav ul li a.resume {
+  background-color: #12335A; /* Sets the background color of the "Resume" button to a dark blue */
+}
+/* Changes the background color of the "Resume" button in the navigation bar when hovered over */
+nav ul li a.resume:hover {
+  background-color: #34577A; /* Changes the background color of the "Resume" button to a slightly lighter blue when hovered over */
+}
+
+
+/* Sets the color of the "Main Page" button in the navigation bar */
+nav ul li a.index {
+  background-color: #12335A; /* Sets the background color of the "Main Page" button to a dark blue */
+}
+/* Changes the background color of the "Main Page" button in the navigation bar when hovered over */
+nav ul li a.index:hover {
+  background-color: #34577A; /* Changes the background color of the "Main Page" button to a slightly lighter blue when hovered over */
+}
+
+
+/* Sets the color of the "AR-Portfolio" button in the navigation bar */
+nav ul li a.ar-portfolio {
+  background-color: #12335A; /* Sets the background color of the "AR-Portfolio" button to a dark blue */
+}
+/* Changes the background color of the "AR-Portfolio" button in the navigation bar when hovered over */
+nav ul li a.ar-portfolio:hover {
+  background-color: #34577A; /* Changes the background color of the "AR-Portfolio" button to a slightly lighter blue when hovered over */
+}
+
+
+/* Sets the color of the "Projects' Portfolio" button in the navigation bar */
+nav ul li a.projects-portfolio {
+  background-color: #12335A; /* Sets the background color of the "Projects' Portfolio" button to a dark blue */
+}
+/* Changes the background color of the "Projects' Portfolio" button in the navigation bar when hovered over */
+nav ul li a.projects-portfolio:hover {
+  background-color: #34577A; /* Changes the background color of the "Projects' Portfolio" button to a slightly lighter blue when hovered over */
+}
+
+/* Adds margin to the sections, adds padding to the sections, and adds a transition effect to all properties */
+section {
+  margin: 20px 0; /* Adds 20px of margin to the top and bottom of the sections, and 0px of margin to the left and right */
+  padding: 20px; /* Adds 20px of padding to all sides of the sections */
+  transition: all 0.3s ease; /* Adds a transition effect to all properties of the sections, the effect lasts 0.3 seconds and has an easing function for a smooth transition */
+}
+
+/* Scales the size of the sections when hovered over */
+section:hover {
+  transform: scale(1.02); /* Scales the size of the sections to 102% of their original size when hovered over */
+}
+
+/* Sets the background color, sets the color of the text, adds padding to the name_roles section, and centers the text */
+#name_roles {
+  background-color: #007BFF; /* Sets the background color of the name_roles section to a bright blue */
+  color: #fff; /* Sets the color of the text in the name_roles section to white */
+  padding: 50px 0; /* Adds 50px of padding to the top and bottom of the name_roles section, and 0px of padding to the left and right */
+  text-align: center; /* Centers the text in the name_roles section */
+}
+
+/* Removes the default margin */
+#name_roles h1, #name_roles h2 {
+  margin: 0; /* Removes the default margin from the h1 and h2 elements in the name_roles section */
+}
+
+/* Sets the font size */
+#name_roles h1 {
+  font-size: 2.5em; /* Sets the font size of the h1 element in the name_roles section to 2.5 times the size of the default font size */
+}
+
+/* Sets the font size and adds margin to the h2 elements */
+#name_roles h2 {
+  font-size: 1.5em; /* Sets the font size of the h2 elements in the name_roles section to 1.5 times the size of the default font size */
+  margin: 10px 0; /* Adds 10px of margin to the top and bottom of the h2 elements, and 0px of margin to the left and right */
+}
+
+/* Sets the maximum width and centers the paragraph horizontally */
+#name_roles p {
+  max-width: 800px; /* Sets the maximum width of the paragraph in the name_roles section to 800px */
+  margin: 20px auto; /* Adds 20px of margin to the top and bottom of the paragraph, and automatically sets the left and right margins to center the paragraph */
+}
+
+/* Displays the elements as inline-block, adds padding to the elements, adds margin to the top of the elements, sets the color of the text, sets the background color, removes the default text decoration, rounds the corners of the elements, and adds a transition effect to the background color and transform properties */
+.resume-button, form input[type="submit"], nav ul li a {
+  display: inline-block; /* Displays the elements as inline-block, which allows them to have a width and height, but still allows them to be in a line with other elements */
+  padding: 10px 20px; /* Adds 10px of padding to the top and bottom of the elements, and 20px of padding to the left and right */
+  margin-top: 20px; /* Adds 20px of margin to the top of the elements */
+  color: #fff; /* Sets the color of the text in the elements to white */
+  background-color: #333; /* Sets the background color of the elements to a dark gray */
+  text-decoration: none; /* Removes the default underline from the links */
+  border-radius: 5px; /* Rounds the corners of the elements */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Adds a transition effect to the background color and transform properties, the effect lasts 0.3 seconds and has an easing function for a smooth transition */
+}
+
+/* Changes the background color when hovered over and scales the size of the elements when hovered over */
+.resume-button:hover, form input[type="submit"]:hover, nav ul li a:hover {
+  background-color: #555; /* Changes the background color of the elements to a slightly lighter gray when hovered over */
+  transform: scale(1.1); /* Scales the size of the elements to 110% of their original size when hovered over */
+}
+
+/* Sets the color of the text */
+#about h2, #about h3, #experience h2, #experience h3, #projects h2, #projects h3, #contact h2, #works h2, #works h3 {
+  color: #007BFF; /* Sets the color of the h2 and h3 elements in the about, experience projects, contact and works sections to a bright blue */
+}
+
+/* Adds margin to the bottom of the job elements */
+.job {
+  margin-bottom: 30px; /* Adds 30px of margin to the bottom of the job elements */
+}
+
+/* Adds margin to the top of the form, sets the maximum width of the form, and centers the form horizontally */
+form {
+  margin-top: 20px; /* Adds 20px of margin to the top of the form */
+  max-width: 600px; /* Sets the maximum width of the form to 600px */
+  margin: 0 auto; /* Sets the top and bottom margins of the form to 0, and automatically sets the left and right margins to center the form */
+}
+
+/* Displays the labels, input fields, and textarea as block elements and adds margin to the bottom of the labels, input fields, and textarea */
+form label, form input, form textarea {
+  display: block; /* Displays the labels, input fields, and textarea as block elements, which allows them to have a width and height, and makes them start on a new line and take up the full width */
+  margin-bottom: 10px; /* Adds 10px of margin to the bottom of the labels, input fields, and textarea */
+}
+
+/* Sets the width of the input fields and textarea to 100% and adds padding to the input fields and textarea */
+form input, form textarea {
+  width: 100%; /* Sets the width of the input fields and textarea to 100% of the width of their parent element */
+  padding: 5px; /* Adds 5px of padding to all sides of the input fields and textarea */
+}
+
+/* Sets the width of the submit button to auto */
+form input[type="submit"] {
+  width: auto; /* Sets the width of the submit button to automatically adjust to its content */
+}
+
+/* Centers the text in the contact section */
+#contact {
+  text-align: center; /* Centers the text in the contact section */
+}
+
+/* Sets the maximum width of the contact text and centers the contact text horizontally */
+.contact-text {
+  max-width: 600px; /* Sets the maximum width of the contact text to 600px */
+  margin: 0 auto; /* Sets the top and bottom margins of the contact text to 0, and automatically sets the left and right margins to center the contact text */
+}
+
+/* The work class is used for each work in the works section */
+.work {
+  /* The display property sets the display type of an element */
+  /* The 'flex' value makes the element a flex container */
+  display: flex;
+  /* The flex-direction property sets the direction of the flex items */
+  /* The 'column' value stacks the flex items vertically */
+  flex-direction: column;
+  /* The align-items property sets the alignment of the flex items on the cross axis */
+  /* The 'center' value centers the flex items */
+  align-items: center;
+  /* The margin property sets the margins of an element */
+  /* The 'auto' value automatically calculates the left and right margins */
+  /* The '20px' value sets the top and bottom margins to 20 pixels */
+  margin: 20px auto;
+}
+
+/* The text inside the work class */
+.work h3, .work p {
+  /* The text-align property sets the horizontal alignment of the text */
+  /* The 'left' value aligns the text to the left */
+  text-align: left;
+  /* The width property sets the width of an element */
+  /* The '100%' value sets the width to 100% of the parent element */
+  width: 100%;
+  /* The padding-left property sets the left padding of an element */
+  /* The '20px' value sets the left padding to 20 pixels */
+ /* padding-left: 20px;*/ 
+}
+
+/* The video inside the work class */
+.work video {
+  /* The max-width property sets the maximum width of an element */
+  /* The '100%' value sets the maximum width to 100% of the parent element */
+  max-width: 100%;
+}
+
+/* Styles for the vertical separator in the navigation bar */
+nav ul li.separator {
+  border-left: 2px solid #000000;  /* Creates a 1px wide vertical line on the left side of the list item */
+  height: 60px;  /* Sets the height of the separator to 60 pixels */
+  align-self: center;  /* Vertically centers the separator within the flex container (navigation bar) */
+  margin: 0 20px;  /* Adds horizontal spacing of 20 pixels on both sides of the separator */
+}
+
+
+.companion {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    pointer-events: none;
+    z-index: 9999;
+    transition: left 0.5s ease-out, top 0.5s ease-out;  /* Even slower movement */
+}
