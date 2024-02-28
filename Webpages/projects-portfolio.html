@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- The title of the webpage -->
+    <title>Mancini Nicola Francesco | AR Portfolio</title>
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+    <!-- The header of the webpage -->
+    <header>
+        <!-- The navigation bar -->
+        <nav>
+            <!-- The list of links in the navigation bar -->
+            <ul>
+                <!-- The link to the resume -->
+                <li><a class="resume" href="../Documents/resume.pdf" target="_blank">Resume</a></li>
+                <!-- Vertical separator -->
+                <li class="separator"></li>
+                <!-- The link to the works section -->
+                <li><a href="#projects">Projects</a></li>
+                <!-- The link to the contact section -->
+                <li><a href="#contact">Contact Me</a></li>
+                <!-- Vertical separator -->
+                <li class="separator"></li>
+                <!-- The link to the main page -->
+                <li><a class="index"href="../index.html">Main Page</a></li>
+                <!-- The link to the projects' portfolio -->
+                <li><a class="ar-portfolio" href="ar-portfolio.html">AR Portfolio</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- The main content of the webpage -->
+    <main>
+        <!-- The works section -->
+        <section id="projects">
+            <!-- The title -->
+            <h2>Projects</h2>
+            <p>Here are reported all the relevant projects that I realized.</p>
+            <!-- The first project -->
+            <div class="projects">  
+                <!-- The title -->
+                <h3>IoT Smart Monitoring System</h3>
+                <!-- The description -->
+                <p>This project is about the design and implementation of a Smart Noise Monitoring System using Internet of Things (IoT) technologies. 
+                    <br>This project aims to detect and predict noise values in a domestic environment using a single sensor, such that after assessing that the setup is reliable, it can be implemented to detect noise pollution in urban areas by leveraging multiple sensors. 
+                    <br>This system, built using the ESP32 microcontroller and a microphone sensor, employs the MQTT protocol for data acquisition and configuration updates. 
+                    <br>The sensor data is processed by a Python-based Data Proxy, stored in Influxdb cloud, and analyzed for noise prediction using a Prophet model. 
+                    <br>Furthermore, a Grafana dashboard (in Grafana cloud) visualizes real-time noise levels, alarm events, Wi-Fi RSSI data, and the predicted noise values. 
+                    <br>The performance of the system is evaluated in terms of data acquisition latency and forecast error (MSE). 
+                    <br>The system also includes a noise classification to some possible noise sources feature and a Telegram bot for alert notifications and system configuration.</p>
+                <p><em>Skills</em>: Arduino, ESP32, NTPClients management for accurate Latency retrieval, Securing the connection, HTTP and MQTT protocols, Connecting together MQTT and InfluxDB,InfluxDB Cloud, Setting a Telegram Bot for various tasks, Flask, Data manipulation (preprocessing, cleaning, filling), Machine Learning Models (used for prediction, ARIMA, SARIMA, SARIMAX, Prophet), Data visualization, Grafana Cloud, Kmeans clustering algorithm with the Elbow Method), Evaluation Metrics (MSE, Silhouette Score, Average Latency)</p>
+                            <!-- The link to the paper -->
+            <a href="/Documents/Smart_Noise_Monitoring_System.pdf" class="resume-button" target="_blank">Read the Paper</a> 
+            </div> 
+
+            <!-- The second project -->
+            <div class="projects">  
+                <!-- The title -->
+                <h3>Secure Data Transmission in Simulated OpenTitan Environment: Integrating UART and AES for Robus Communication</h3>
+                <!-- The description -->
+                <p>This project, driven by the challenge of ensuring robust data security in digital communication, explores the integration of hardware and software components in a simulated environment, compensating for the unavailability of the physical OpenTitan chip.
+                    <br>By employing Verilator and Bazel for simulation, the project offers a unique insight into the effective use of OpenTitan's UART and AES modules for encrypted communication.
+                    <br>This includes a detailed examination of the encryption process, data handling through UART, and the critical role of Interrupt Service Routines (ISR) in managing data flow.
+                    <br>The project's implementation in C language, using OpenTitan's Device Interface Functions (DIFs), highlights innovative approaches to secure communication protocols.
+                    <br>The findings from this study not only confirm the feasibility of using OpenTitan for secure data transmission but also open avenues for future advancements in cybersecurity and secure hardware applications.</p>
+                <p><em>Skills</em>: Opentitan, C, AES, UART.</p>
+                            <!-- The link to the paper -->
+                <a href="/Documents/Secure_Data_Transmission_in_Simulated_OpenTitan.pdf" class="resume-button" target="_blank">Read the Paper</a> 
+            </div> 
+
+            <!-- The third project -->
+            <div class="projects">  
+                <!-- The title -->
+                <h3>NLP Sentence</h3>
+                <!-- The description -->
+                <p>The purpose of this project is to take in input a sequence of words corresponding to a random permutation of a given english sentence, and reconstruct the original sentence.
+                    <br>The output can be either produced in a single shot, or through an iterative (autoregressive) loop generating a single token at a time.
+                    <br>Two constraints were also given for this project:
+                    <br>1. No pretrained model can be used.
+                    <br>2. The neural network models should have less the 20M parameters.</p>
+                <p><em>Skills</em>: Machine Learning Models (LSTMs, Transformers). Training the model, make predictions and evaluate those predictions.</p>
+                <p><em>Addings in progress</em>: Data Augmentation to increase the testing dataset, and obtain at the end an higher evaluation score (meaning an higher accuracy in the prediction for the words' ordering).</p>
+                <p><em>Link</em>: under revision to host </p>
+            </div> 
+
+        </section>
+        <!-- The contact section -->
+        <section id="contact">
+            <!-- The title -->
+            <h2>Contact Me</h2>
+            <!-- The contact text -->
+            <div class="contact-text">
+                <p>You can reach me on <a href="https://www.linkedin.com/in/nicola-f-mancini/" target="_blank">LinkedIn</a> or <a href="https://www.instagram.com/nicvedere/" target="_blank">Instagram</a>.</p>
+            </div>
+            <p> Mobile Phone:  <a href="tel:+39 3468575805" target="_blank">+39 3468575805</a> .</p>
+            <p> E-mail:  <a href="mailto:nicomancini99@gmail.com" target="_blank">nicomancini99@gmail.com</a> .</p>
+            
+            <section id="contact"></section>
+            <h2>Schedule a Meeting</h2>
+       
+       <!-- Google Calendar Appointment Scheduling begin -->
+       <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2SvJtQj_ci2U7-JbCsdr5oHV-JM0evhwoYoIfHqgCwnHt_GiZlPHTaq6YLUsif--hhKo2jV2o4?gv=true" style="border: 0" width="100%" height="600" frameborder="0"></iframe>
+       <!-- end Google Calendar Appointment Scheduling -->
+       </section>
+    </main>
+</body>
+</html>
+
+<script>
+    let animalImage;
+    let lastCursorX;
+
+    function updatePosition(event) {
+        let x = event.clientX;
+        let y = event.clientY;
+        let animalX = animalImage.offsetLeft + animalImage.offsetWidth / 2;
+        let animalY = animalImage.offsetTop + animalImage.offsetHeight / 2;
+        let distance = Math.sqrt(Math.pow(x - animalX, 2) + Math.pow(y - animalY, 2));
+
+        if (distance > 20) {
+            animalImage.style.left = (x - animalImage.offsetWidth / 2) + 'px';
+            animalImage.style.top = (y - animalImage.offsetHeight / 2) + 'px';
+        }
+
+        // Flip the image based on the direction of cursor movement
+        if (lastCursorX !== undefined && x > lastCursorX) {
+            animalImage.style.transform = 'scaleX(-1)';  // Move to the right, flip horizontally
+        } else if (lastCursorX !== undefined && x < lastCursorX) {
+            animalImage.style.transform = 'scaleX(1)';   // Move to the left
+        }
+        lastCursorX = x;
+    }
+
+    // Display the pet based on the user's choice stored in localStorage
+    let animalChoice = localStorage.getItem('animalCompanion');
+    if (animalChoice) {
+        animalImage = document.createElement('img');
+        if (animalChoice === 'cat') {
+            animalImage.src = '../Images/path_to_cat_pixel_art.png';
+        } else {
+            animalImage.src = '../Images/path_to_dog_pixel_art.png';
+        }
+        animalImage.classList.add('companion');
+        document.body.appendChild(animalImage);
+        document.addEventListener('mousemove', updatePosition);
+    }
+</script>
